@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Restaurant web Site</title>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!--! header section start-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo" />
+            </a>
+            <nav class= "navbar active" >
+                <a href="#home" class="active">Anasayfa</a> 
+                <a href="#about">Hakkımızda</a> 
+                <a href="#menu">Menü</a> 
+                <a href="#products">Ürünlerimiz</a> 
+                <a href="#review">Yorumlar</a> 
+                <a href="#contact">İletişim</a>
+            </nav>
+            <div class="buttons">
+                <button id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>  
+            <div class="search-form">
+                <input 
+                    type="text" 
+                    class="search-input"
+                    placeholder="search here"/>
+                <i class="fas fa-search"></i>
+            </div> 
+            <div class="cart-items-container" id="cart-container">
+                <div class="cart-item">
+                    <i class="fas fa-times remove-item"></i>
+                    <img src="images/menu-1.jpg" alt="menu">
+                    <div class="content">
+                        <h3>ürün 01</h3>
+                        <div class="price">50.00₺/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <i class="fas fa-times remove-item"></i>
+                    <img src="images/foto2.jpg" alt="menu">
+                    <div class="content">
+                        <h3>ürün 02</h3>
+                        <div class="price">50.00₺/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <i class="fas fa-times remove-item"></i>
+                    <img src="images/foto3.jpg" alt="menu">
+                    <div class="content">
+                        <h3>ürün 03</h3>
+                        <div class="price">50.00₺/-</div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Şimdi Ödeme Yap</a>
+            </div>
+    </header>
+   
+    <!--! header section end-->
+    <!--! home section start-->
+    <section class="home" id="home">
+    <div class="content">
+        <h3>ANINDA EVE SİPARİŞ</h3>
+        <p>
+            Online sipariş altyapımız yenilendi. 
+            “Nazar Online” uygulamasını Apple Store ve Google Play’dan indirin, 
+            eşsiz Nazar lezzetlerini hemen sipariş edin.
+        </p>
+        <a href="#" class ="btn">Hemen sipariş et</a></div>
+    </section>
+    <!--! home section end-->
+    <!--! menu section start-->
+    <section class ="menu" id="menu">
+        <h1 class="heading"><span>menümüz</span></h1>
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/foto.jpeg" alt="menü">
+                    <span class="menu-category">EKLER</span>
+                    <h3>3 ekler</h3>
+                    <div class="price">
+                        150,00₺ <span>200,00₺</span>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/2.jpg" alt="menü">
+                    <span class="menu-category">PROFİTEROL</span>
+                    <h3>5 profiterol</h3>
+                    <div class="price">
+                        180,00₺ <span>200,00₺</span>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/3.png" alt="menü">
+                    <span class="menu-category">PASTA</span>
+                    <h3>Çikolatalı Pasta</h3>
+                    <div class="price">
+                        100,00₺ <span>200,00₺</span>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/4.png" alt="menü">
+                    <span class="menu-category">EKLER</span>
+                    <h3>3 Çikolatalı Ekler</h3>
+                    <div class="price">
+                        150,00₺ <span>200,00₺</span>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">sepete ekle</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <!--! menu section end-->
+
+
+    
+    <!--! products section start-->
+    <section class="products" id="products">
+        <h1 class="heading"><span>ürünlerimiz</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Pasta</span>
+                    <a href="#" class="name">Rulo Pasta</a>
+                </div>
+                <div class="image">
+                    <img src="images/foto1.jpg" alt="">
+                    </div>
+                     <div class="box-bottom">
+                        <div class="info">
+                         <b class="price">50.00₺</b>
+                        <span class="amount">110gr / 300 Cal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>            
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Şerbetli Tatlı</span>
+                    <a href="#" class="name">Baklava</a>
+                </div>
+                <div class="image">
+                    <img src="images/foto3.jpg" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">50.00₺</b>
+                        <span class="amount">110gr / 300 Cal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="box dark-bg">
+                <div class="box-head">
+                    <span class="title">Pasta</span>
+                    <a href="#" class="name">Cheesecake</a>
+                </div>
+                <div class="image">
+                    <img src="images/foto2.jpg" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">50.00₺</b>
+                        <span class="amount">110gr / 300 Cal</span>
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--! products section end-->
+    <!--! about section start-->
+    <section class="about" id="about">
+        <h1 class="heading">Hakkımızda</h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/about.jpg" alt="hakkımızda">
+            </div>
+            <div class="content">
+                <h3>Tutku ile yoğrulmuş el yapımı gurme ürünlerin sırrı nedir?</h3>
+                <p>Nazar Unlu Mamuller A.Ş. yarım asra yakın bir zamandır Muğla’da hizmet veren Karakaşlar Gıda Ltd. Şti.’nin yarattığı bir kuruluştur. Yıllarca marketçilik ve toptan gıda ticareti yapan firmamız, 1993 yılında müthiş bir sinerjiyle yola çıkarak pastacılıkta bir çığır açmıştır.</p>
+                <p>Tutku ile yoğrulmuş el yapımı gurme ürünlerin yaratıcısı olan Nazar, bölgede en çok tercih edilen markalar arasında ilk sırada yer alır. Prestij, keyif, kalite ve geleneğin temsilcisi olan firmamız, tüm ürünlerinde en kaliteli hammaddeleri, en orijinal reçetelerle hazırlayıp, en iyi şekilde müşterilerine sunan gerçek bir lezzet markasıdır.</p>
+                <a href="#" class="btn">Daha Fazlası</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--! about section end-->
+    <!--! review section start-->
+    <section class="review" id="review">
+        <h1 class="heading">müşterilerin<span> yorumları</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/quote.png" alt="quote">
+                <p>Tutku ile yoğrulmuş el yapımı gurme ürünlerin yaratıcısı olan Nazar, tüm ürünlerinde en kaliteli hammaddeleri, en orijinal reçetelerle hazırlayıp, en iyi şekilde müşterilerine sunan gerçek bir lezzet markasıdır.
+                </p>
+                <img src="images/avatar-1.png" alt="kullanıcı"
+                class="user" />
+                <h3>Selvi Yıldız</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/quote.png" alt="quote">
+                <p>Tutku ile yoğrulmuş el yapımı gurme ürünlerin yaratıcısı olan Nazar, tüm ürünlerinde en kaliteli hammaddeleri, en orijinal reçetelerle hazırlayıp, en iyi şekilde müşterilerine sunan gerçek bir lezzet markasıdır.
+                </p>
+                <img src="images/avatar-2.png" alt="kullanıcı"
+                class="user" />
+                <h3>Tuncay Yıldız</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/quote.png" alt="quote">
+                <p>Tutku ile yoğrulmuş el yapımı gurme ürünlerin yaratıcısı olan Nazar, tüm ürünlerinde en kaliteli hammaddeleri, en orijinal reçetelerle hazırlayıp, en iyi şekilde müşterilerine sunan gerçek bir lezzet markasıdır.
+                </p>
+                <img src="images/avatar-3.png" alt="kullanıcı"
+                class="user" />
+                <h3>Hülya Yıldız</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--! review section end-->
+
+    <!--! contact section start-->
+    <section class="contact" id="contact">
+        <h1 class="heading">bize <span>ulaşın</span></h1>
+        <div class="row">
+            <iframe 
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6495.540671883196!2d28.360602638490302!3d37.21781447915467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bfbc26f1d543bd%3A0x6916f9ee76f63f66!2sNazar%20Unlu%20Mam%C3%BClleri!5e0!3m2!1str!2str!4v1739316019678!5m2!1str!2str"
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <form>
+                <h3>iletişime geçin</h3>
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="isim" />
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="email" />
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="telefon numarası" />
+                </div>
+                <input type="submit" class="btn" value="şimdi iletişime geç">
+            </form>
+        </div>
+    </section>
+    <!--! contact section end-->
+
+    <!--! footer section start-->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input"
+            placeholder="Ara" />
+            <button class="btn btn-primary">Ara</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#" class="active">Anasayfa</a> 
+            <a href="#">Hakkımızda</a> 
+            <a href="#">Menü</a> 
+            <a href="#">Ürünlerimiz</a> 
+            <a href="#">Yorumlar</a> 
+            <a href="#">İletişim</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="credit">
+            created by <span>Elif Yıldız 𓃠</span> | tüm hakları saklıdır
+        </div>
+    </section>
+
+    <!--! footer section end-->
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html>
